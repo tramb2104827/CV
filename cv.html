@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CV – Bích Trâm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --teal: #14b8a6;
+        --text: #0f172a;
+        --muted: #475569;
+        --border: rgba(15, 23, 42, 0.14);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        line-height: 1.55;
+        background: #fff;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrap {
+        width: min(920px, calc(100% - 40px));
+        margin: 28px auto 48px;
+      }
+      .topbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .name {
+        margin: 0;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+      }
+      .role {
+        margin: 6px 0 0;
+        font-weight: 700;
+        color: var(--teal);
+      }
+      .actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .btn {
+        border: 1px solid var(--border);
+        padding: 8px 12px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 13px;
+        background: #fff;
+      }
+      .btn.primary {
+        border-color: rgba(20, 184, 166, 0.35);
+        background: rgba(20, 184, 166, 0.12);
+        color: var(--teal);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 0.9fr;
+        gap: 16px;
+        align-items: start;
+      }
+      .card {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px;
+      }
+      h2 {
+        margin: 0 0 10px;
+        font-size: 15px;
+        letter-spacing: -0.01em;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .kv {
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 8px 10px;
+        font-size: 13px;
+      }
+      .k {
+        color: var(--muted);
+        font-weight: 800;
+      }
+      .v {
+        font-weight: 700;
+      }
+      ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .chiprow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .chip {
+        border: 1px solid rgba(20, 184, 166, 0.32);
+        background: rgba(20, 184, 166, 0.09);
+        padding: 7px 10px;
+        border-radius: 999px;
+        font-weight: 800;
+        font-size: 12px;
+      }
+      .section {
+        margin-top: 16px;
+      }
+      .subhead {
+        font-weight: 800;
+        margin: 8px 0 0;
+      }
+      @media print {
+        .actions {
+          display: none;
+        }
+        .wrap {
+          margin: 0;
+          width: 100%;
+        }
+      }
+      @media (max-width: 860px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .actions {
+          justify-content: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topbar">
+        <div>
+          <h1 class="name">Bích Trâm</h1>
+          <p class="role">IT Lecturer – Software Application</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="index.html">Về Website</a>
+          <button class="btn primary" type="button" onclick="window.print()">In / Lưu PDF</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p class="muted" style="margin: 0">
+              Ứng tuyển vị trí <strong>Giảng viên Công nghệ Thông tin – Ứng dụng phần mềm (UDPM)</strong>.
+              Mong muốn giảng dạy các học phần lập trình cơ bản, ứng dụng phần mềm và thực hành CNTT; hướng dẫn sinh viên
+              phát triển tư duy thuật toán và kỹ năng thực hành. Mong muốn làm việc lâu dài trong môi trường giáo dục
+              chuyên nghiệp và không ngừng nâng cao năng lực chuyên môn, nghiệp vụ sư phạm.
+            </p>
+          </div>
+
+          <div class="card section">
+            <h2>Giới thiệu</h2>
+            <p class="muted" style="margin: 0">
+              Sinh viên tốt nghiệp chuyên ngành <strong>Mạng máy tính và Truyền thông dữ liệu</strong> – Đại học Cần Thơ.
+              Có kinh nghiệm giảng dạy <strong>STEM, C++, Arduino</strong>, hướng dẫn học sinh phát triển tư duy thuật toán
+              và tham gia các cuộc thi <strong>Robothon</strong>.
+            </p>
+          </div>
+
+          <div class="card section">
+            <h2>Trình độ học vấn</h2>
+            <p class="subhead" style="margin: 0">Đại học Cần Thơ (2021 – 2025) · Xếp loại: Giỏi</p>
+            <p class="muted" style="margin: 8px 0 0">
+              Chuyên ngành: Mạng máy tính & Truyền thông dữ liệu
+            </p>
+            <p class="subhead">Luận văn tốt nghiệp: Hệ thống bầu cử trực tuyến ứng dụng Blockchain</p>
+            <ul>
+              <li>Phân tích thiết kế hệ thống</li>
+              <li>Xây dựng chức năng phần mềm</li>
+              <li>Quản lý dữ liệu</li>
+              <li>Đảm bảo tính minh bạch và bảo mật</li>
+            </ul>
+          </div>
+
+          <div class="card section">
+            <h2>Kinh nghiệm</h2>
+            <p class="subhead" style="margin: 0">Milestones Vietnam | 2025</p>
+            <p class="muted" style="margin: 6px 0 0"><strong>Giáo viên STEM – Huấn luyện viên Robothon</strong></p>
+            <ul>
+              <li>Giảng dạy lập trình C++ và Arduino</li>
+              <li>Hướng dẫn tư duy thuật toán</li>
+              <li>Biên soạn tài liệu STEM</li>
+              <li>Huấn luyện học sinh tham gia Robothon</li>
+            </ul>
+
+            <p class="subhead" style="margin-top: 14px">TEKNIX | 2024</p>
+            <p class="muted" style="margin: 6px 0 0"><strong>Nhân viên vận hành hệ thống VoteMe</strong></p>
+            <ul>
+              <li>Hỗ trợ vận hành hệ thống phần mềm</li>
+              <li>Hướng dẫn người dùng sử dụng hệ thống</li>
+              <li>Quản lý dữ liệu</li>
+              <li>Phối hợp xử lý sự cố hệ thống</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <h2>Thông tin cá nhân</h2>
+            <div class="kv">
+              <div class="k">Họ và tên</div>
+              <div class="v">Bích Trâm</div>
+              <div class="k">Ngày sinh</div>
+              <div class="v">05/04/2003</div>
+              <div class="k">Địa chỉ</div>
+              <div class="v">Ninh Kiều, Cần Thơ</div>
+              <div class="k">Điện thoại</div>
+              <div class="v"><a href="tel:+84396836781">0396 836 781</a></div>
+              <div class="k">Email</div>
+              <div class="v"><a href="mailto:tramb2104827@gmail.com">tramb2104827@gmail.com</a></div>
+              <div class="k">GitHub</div>
+              <div class="v">
+                <a href="https://github.com/tramb2104827" target="_blank" rel="noreferrer"
+                  >github.com/tramb2104827</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card section">
+            <h2>Kỹ năng</h2>
+            <div class="muted" style="font-weight: 800; margin-top: 10px">Lập trình</div>
+            <div class="chiprow">
+              <span class="chip">C++</span>
+              <span class="chip">Arduino</span>
+              <span class="chip">Lập trình cơ bản</span>
+            </div>
+
+            <div class="muted" style="font-weight: 800; margin-top: 12px">CNTT</div>
+            <div class="chiprow">
+              <span class="chip">Vận hành hệ thống</span>
+              <span class="chip">Quản lý dữ liệu</span>
+              <span class="chip">Ứng dụng</span>
+            </div>
+            <div class="chiprow">
+              <span class="chip">Microsoft Word</span>
+              <span class="chip">Excel</span>
+              <span class="chip">Google Workspace</span>
+            </div>
+
+            <div class="muted" style="font-weight: 800; margin-top: 12px">Giảng dạy</div>
+            <ul>
+              <li>Hướng dẫn thực hành lập trình</li>
+              <li>Truyền đạt kiến thức cho người học</li>
+              <li>Giao tiếp rõ ràng</li>
+              <li>Kiên nhẫn và trách nhiệm</li>
+            </ul>
+          </div>
+
+          <div class="card section">
+            <h2>Học phần có thể giảng dạy</h2>
+            <div class="chiprow">
+              <span class="chip">Lập trình C/C++</span>
+              <span class="chip">Lập trình hướng đối tượng</span>
+              <span class="chip">Nhập môn CNTT</span>
+              <span class="chip">Tin học văn phòng</span>
+              <span class="chip">Arduino cơ bản</span>
+            </div>
+          </div>
+
+          <div class="card section">
+            <h2>Hoạt động & Thành tích</h2>
+            <p class="muted" style="margin: 0">
+              <strong>BCH Đoàn Trường CNTT&TT – Đại học Cần Thơ</strong> (2022 – 2024)
+            </p>
+            <ul>
+              <li>Ủy viên Ban Chấp hành</li>
+              <li>Thành viên Ban Tài chính</li>
+              <li>Tổ chức hoạt động Đoàn – Hội</li>
+            </ul>
+            <div class="muted" style="font-weight: 800; margin-top: 10px">Thành tích</div>
+            <ul>
+              <li>Giấy khen hoàn thành xuất sắc nhiệm vụ Đoàn</li>
+              <li>Tham gia chiến dịch Mùa hè xanh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
