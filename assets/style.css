@@ -322,7 +322,7 @@ a {
   font-size: 54px;
   color: var(--teal);
   letter-spacing: 1px;
-  background-image: url('C:/CV/assets/Bích Trâm.png');
+  background-image: url('Bích\ Trâm.png');
   background-size: cover;
   background-position: center;
 }
